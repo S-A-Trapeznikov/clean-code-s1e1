@@ -7,21 +7,21 @@
 </head>
 <body>
   <div class="page">
-    <div class="decision-mtx">
+    <header class="decision-mtx">
       <img src="./eisenhower-matrix.jpg">
       <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="tasks-container">
-      <p id="add-tasks">
-        <label class="tasks-header new-task-header" for="new-task">Add Item</label>
+    </header>
+    <main class="tasks-container">
+      <article id="add-tasks">
+        <h3 class="tasks-header new-task-header">Add Item</h3>
         <div class="task-wrapper">
           <input id="new-task" class="task task-input outline-none list-item-width" type="text">
           <button class="normal-btn outline-none">Add</button>
         </div>
-      </p>
+      </article>
       <h3 class="tasks-header list-style-none">Todo</h3>
-      <ul id="incomplete-tasks" class="item-list">
-        <li class="list-item list-style-none">
+      <article id="incomplete-tasks" class="item-list">
+        <div class="list-item list-style-none">
           <input class="list-item-checkbox outline-none" type="checkbox">
           <label class="task list-item-text">Pay Bills</label>
           <input type="text" class="task task-input outline-none list-item-width hide">
@@ -29,8 +29,8 @@
           <button class="normal-btn delete-btn outline-none">
             <img src="./remove.svg">
           </button>
-        </li>
-        <li class="list-item edit-mode list-style-none">
+        </div>
+        <div class="list-item edit-mode list-style-none">
           <input class="list-item-checkbox outline-none" type="checkbox">
           <label class="task list-item-text">Go Shopping</label>
           <input type="text" value="Go Shopping" class="task task-input outline-none list-item-width hide">
@@ -38,11 +38,11 @@
           <button class="normal-btn delete-btn outline-none">
             <img src="./remove.svg">
           </button>
-        </li>
-      </ul>
+        </div>
+      </article>
       <h3 class="tasks-header list-style-none">Completed</h3>
-      <ul id="completed-tasks" class="item-list">
-        <li class="list-item list-style-none">
+      <article id="completed-tasks" class="item-list">
+        <div class="list-item list-style-none">
           <input class="list-item-checkbox outline-none" type="checkbox" checked>
           <label class="task list-item-text">See the Doctor</label>
           <input type="text" class="task task-input outline-none list-item-width hide">
@@ -50,9 +50,9 @@
           <button class="normal-btn delete-btn outline-none">
             <img src="./remove.svg">
           </button>
-        </li>
-      </ul>
-    </div>
+        </div>
+      </article>
+    </main>
   </div>
   <script src="app.js"></script>
 </body>
